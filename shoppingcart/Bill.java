@@ -11,7 +11,7 @@ public class Bill {
         
         else
         {
-            System.out.println("Total amount is: "+ bill);
+            System.out.println("Total amount is: "+ bill + " Rs.");
         }
     }
 }
