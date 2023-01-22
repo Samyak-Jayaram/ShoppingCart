@@ -4,7 +4,7 @@ import java.util.HashMap;
 public class Cart {
      
      static HashMap<Integer,Integer> items = new HashMap<Integer, Integer>(); 
-     static int[] cost = new int[]{ 10,20,30}; 
+     static int[] cost = new int[]{ 100,150,200}; 
      static int totalsum = 0;
 
 
