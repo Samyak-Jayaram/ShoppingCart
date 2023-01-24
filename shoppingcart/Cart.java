@@ -8,8 +8,17 @@ public class Cart {
      static int totalsum = 0;
 
 
-     public static void resetSum() {
+     public static void resetSum() 
+    {
         Cart.totalsum = 0;
+    }
+    public static void resetSum(Boolean done) 
+    {
+        if (done)
+        {
+            AddItem.addtotal = 0;
+            DeleteItem.deletetotal= 0;
+        }
     }
 
 

@@ -6,7 +6,7 @@ public class Interface {
 	    
 	    void show()
 	    {
-	        System.out.println("Choose one of the following:\n\t1.Display Products\n\t2.Add product\n\t3.Remove product\n\t4.Bill\n\t5.Exit");
+	        System.out.println("Choose one of the following:\n\t1.Display Products\n\t2.Add product\n\t3.Remove product\n\t4.Bill\n\t5.Avail Discount\n\t6.Exit");
 	        Scanner s = new Scanner(System.in);
 	        for(;;)
 	        {
@@ -22,7 +22,9 @@ public class Interface {
 	                        break;
 	            case 4:  Bill.displaybill();
 	                        break;
-	            case 5 : System.out.println("Exiting");
+				// case 5:  Discount.displaybill();
+	            //             break;
+	            case 6 : System.out.println("Exiting");
 	                        System.exit(0);
 	            default: System.out.println("Choose correct choice");
 	                break;

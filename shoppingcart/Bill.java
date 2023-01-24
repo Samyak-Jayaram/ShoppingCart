@@ -1,8 +1,8 @@
 package shoppingcart;
 
 public class Bill {
-    static int bill = AddItem.addtotal - DeleteItem.deletetotal;
-     static void displaybill()
+    static int bill =0; 
+    static void displaybill()
     {
         if (bill<0)
         {
@@ -11,6 +11,8 @@ public class Bill {
         
         else
         {
+            bill += AddItem.addtotal - DeleteItem.deletetotal;
+            Cart.resetSum(true);
             System.out.println("Total amount is: "+ bill + " Rs.");
         }
     }

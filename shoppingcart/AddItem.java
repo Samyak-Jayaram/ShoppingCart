@@ -15,5 +15,6 @@ public class AddItem {
         quantity =  s.nextInt();
         Cart.resetSum();
         addtotal += Cart.total(number,quantity);
+        
     }
 }
