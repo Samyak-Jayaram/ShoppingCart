@@ -1,5 +1,6 @@
 package shoppingcart;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class AddItem {
@@ -7,14 +8,18 @@ public class AddItem {
      static int quantity;
      static int addtotal=0;
     
-     static void add()
+     static void add() throws InputMismatchException
     {
-        Scanner s = new Scanner(System.in);
-        System.out.println("Enter item number and it's quantity to be added:\n");
-        number = s.nextInt();
-        quantity =  s.nextInt();
-        Cart.resetSum();
-        addtotal += Cart.total(number,quantity);
-        
+        try {
+            Scanner s = new Scanner(System.in);
+            System.out.println("Enter item number and it's quantity to be added:\n");
+            number = s.nextInt();
+            quantity =  s.nextInt();
+            Cart.resetSum();
+            addtotal += Cart.total(number,quantity);
+            
+        } catch (Exception e) {
+            System.out.println("Invalid input "+ e);
+        }
     }
 }
