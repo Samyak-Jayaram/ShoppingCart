@@ -11,8 +11,9 @@ public class DeleteItem
     {
         try {
             Scanner s = new Scanner(System.in);
-            System.out.println("Enter item number and it's quantity to be deleted:\n");
+            System.out.println("Enter item number to be deleted:\n");
             number = s.nextInt();
+            System.out.println("Enter  quantity  of item to be deleted: ");
             quantity =  s.nextInt();
             Cart.resetSum();
             deletetotal += Cart.total(number,quantity);

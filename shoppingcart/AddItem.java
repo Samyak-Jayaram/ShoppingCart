@@ -12,8 +12,9 @@ public class AddItem {
     {
         try {
             Scanner s = new Scanner(System.in);
-            System.out.println("Enter item number and it's quantity to be added:\n");
+            System.out.println("Enter item number to be added:\n");
             number = s.nextInt();
+            System.out.println("Enter  quantity  of item to be added: ");
             quantity =  s.nextInt();
             Cart.resetSum();
             addtotal += Cart.total(number,quantity);
