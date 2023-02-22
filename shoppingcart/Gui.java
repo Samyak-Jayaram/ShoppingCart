@@ -155,6 +155,9 @@ public class Gui implements java.awt.event.ActionListener{
    final_result.setText("Your total bill is: "+String.valueOf(Bill.bill));
    final_result.setHorizontalTextPosition(JLabel.CENTER);
 
+   Image icon = Toolkit.getDefaultToolkit().getImage("cart.png");    
+    frame.setIconImage(icon);    
+
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setSize(1000,1000);
     frame.setLayout(null);
