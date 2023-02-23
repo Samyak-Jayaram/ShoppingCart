@@ -1,5 +1,3 @@
-
-
 public class Bill {
    
     static int bill =0;
