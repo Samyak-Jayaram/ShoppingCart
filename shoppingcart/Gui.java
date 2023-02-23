@@ -150,8 +150,8 @@ public class Gui implements java.awt.event.ActionListener{
 
 
 
-   final_result.setBounds(600,700,1000,100);
-   final_result.setFont(new Font("Times New Roman",Font.BOLD,30));
+   final_result.setBounds(600,700,2000,100);
+   final_result.setFont(new Font("Times New Roman",Font.BOLD,20));
    final_result.setText("Your total bill is: "+String.valueOf(Bill.bill));
    final_result.setHorizontalTextPosition(JLabel.CENTER);
 
